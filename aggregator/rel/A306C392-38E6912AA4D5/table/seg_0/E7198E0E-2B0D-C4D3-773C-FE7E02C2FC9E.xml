@@ -1,0 +1,46 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="E7198E0E-2B0D-C4D3-773C-FE7E02C2FC9E" name="CR_ASSEMBLE_TYPE">
+<createdBy>daven</createdBy>
+<createdTime>2016-03-29 17:32:36 UTC</createdTime>
+<ownerDesignName>aggregator</ownerDesignName>
+<ordsAlias>table_4</ordsAlias>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="ID" id="006116BD-9620-E401-89D9-32274551CCFF">
+<createdBy>daven</createdBy>
+<createdTime>2016-03-29 17:34:21 UTC</createdTime>
+<ownerDesignName>aggregator</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="NAME" id="34CA89F8-64EF-FBB5-824B-AB40B150EEB1">
+<createdBy>daven</createdBy>
+<createdTime>2016-03-29 17:34:53 UTC</createdTime>
+<ownerDesignName>aggregator</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>100</dataTypeSize>
+<ownDataTypeParameters>100,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="934FEB1F-EC68-1EBE-FDCF-4E895B9E52C5" name="CR_ASSEMBLE_TYPE_PK">
+<createdBy>daven</createdBy>
+<createdTime>2016-03-29 17:34:21 UTC</createdTime>
+<ownerDesignName>aggregator</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="006116BD-9620-E401-89D9-32274551CCFF"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

@@ -1,0 +1,4 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<oracle.dbtools.crest.model.design.relational.RelationalDesign>
+   <object objectType="main_view" objectID="B0E65D6B-08FC-1D34-B76B-E39A4BFCB29E" name="aggregator" visible="true"/>
+</oracle.dbtools.crest.model.design.relational.RelationalDesign>

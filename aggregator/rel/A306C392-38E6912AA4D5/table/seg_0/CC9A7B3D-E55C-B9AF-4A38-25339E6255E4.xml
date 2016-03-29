@@ -1,0 +1,95 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="CC9A7B3D-E55C-B9AF-4A38-25339E6255E4" name="EV_METADATA">
+<createdBy>daven</createdBy>
+<createdTime>2016-03-29 19:09:13 UTC</createdTime>
+<ownerDesignName>aggregator</ownerDesignName>
+<ordsAlias>table_9</ordsAlias>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="ID" id="1D15F90A-4132-5F9A-1D47-3F8FB529DAFC">
+<createdBy>daven</createdBy>
+<createdTime>2016-03-29 19:10:56 UTC</createdTime>
+<ownerDesignName>aggregator</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="VALUE" id="45B17A30-3BE8-7D8A-4291-1732CF15C6C6">
+<createdBy>daven</createdBy>
+<createdTime>2016-03-29 19:10:56 UTC</createdTime>
+<ownerDesignName>aggregator</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>300</dataTypeSize>
+<ownDataTypeParameters>300,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="EV_SOURCE_ID" id="D12CB83F-4163-031A-5262-1B069D6F20D6">
+<createdBy>daven</createdBy>
+<createdTime>2016-03-29 19:11:37 UTC</createdTime>
+<ownerDesignName>aggregator</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="488BF148-8584-0336-A63A-EBEA6A862412" referredColumn="D7FAF24C-B334-2930-0AB7-6CB3EFDCFD82"/>
+</associations>
+</Column>
+<Column name="EV_KEYS_ID" id="324EB3A7-C367-A4CA-8792-AB2BB597BB81">
+<createdBy>daven</createdBy>
+<createdTime>2016-03-29 19:14:33 UTC</createdTime>
+<ownerDesignName>aggregator</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="A1D1E07E-A357-608F-ECEA-C8D8C616CA31" referredColumn="1D9251AA-B966-D0BD-FD16-2DF0AC4F4D6C"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="587BE4EB-DABE-CACC-84F9-5C8E81D3E2CB" name="EV_METADATA_PK">
+<createdBy>daven</createdBy>
+<createdTime>2016-03-29 19:10:56 UTC</createdTime>
+<ownerDesignName>aggregator</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="1D15F90A-4132-5F9A-1D47-3F8FB529DAFC"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="98955147-DAA8-74B9-8AB0-1B31227BB140" name="EV_METADATA_EV_SOURCE_FK">
+<createdBy>daven</createdBy>
+<createdTime>2016-03-29 19:11:37 UTC</createdTime>
+<ownerDesignName>aggregator</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="D12CB83F-4163-031A-5262-1B069D6F20D6"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="330D2D86-E00B-42E4-EDB5-32A8F0A4BF69" name="EV_METADATA_EV_KEYS_FK">
+<createdBy>daven</createdBy>
+<createdTime>2016-03-29 19:14:33 UTC</createdTime>
+<ownerDesignName>aggregator</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="324EB3A7-C367-A4CA-8792-AB2BB597BB81"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

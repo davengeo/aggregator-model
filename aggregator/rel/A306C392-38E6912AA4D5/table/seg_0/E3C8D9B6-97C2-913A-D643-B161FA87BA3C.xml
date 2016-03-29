@@ -1,0 +1,107 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="E3C8D9B6-97C2-913A-D643-B161FA87BA3C" name="CR_ASSEMBLE_PART">
+<createdBy>daven</createdBy>
+<createdTime>2016-03-29 17:18:11 UTC</createdTime>
+<ownerDesignName>aggregator</ownerDesignName>
+<ordsAlias>table_3</ordsAlias>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="ID" id="B634600C-B3B2-4E96-CAFC-E69957CFE988">
+<createdBy>daven</createdBy>
+<createdTime>2016-03-29 17:18:50 UTC</createdTime>
+<ownerDesignName>aggregator</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="CR_ASSEMBLAGE_ID" id="E8EDCC49-9F70-9FE7-C5F5-DD3B1E8926DF">
+<createdBy>daven</createdBy>
+<createdTime>2016-03-29 17:20:21 UTC</createdTime>
+<ownerDesignName>aggregator</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="04FF7F59-1F10-36FF-F451-E28F06D1D3DA" referredColumn="9EFDB266-EA9F-4B61-B427-EC751D12FD33"/>
+</associations>
+</Column>
+<Column name="CR_PART_ID" id="6A3B533A-89E5-63CB-6F63-ABCF78F66A26">
+<createdBy>daven</createdBy>
+<createdTime>2016-03-29 17:21:56 UTC</createdTime>
+<ownerDesignName>aggregator</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="3FBB991A-D446-711A-5944-8DDCEDFDEABD" referredColumn="CC030942-0945-2596-0148-5F7183FE6C17"/>
+</associations>
+</Column>
+<Column name="CR_ASSEMBLE_TYPE_ID" id="4E280765-98DD-1890-1C93-8D4F45348C52">
+<createdBy>daven</createdBy>
+<createdTime>2016-03-29 17:37:08 UTC</createdTime>
+<ownerDesignName>aggregator</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="F6E39C0F-1067-42AF-8B3E-5939066F6A37" referredColumn="006116BD-9620-E401-89D9-32274551CCFF"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="ECEA1E87-73D7-7415-06BA-85EEB43D0382" name="CR_ASSEMBLE_PART_PK">
+<createdBy>daven</createdBy>
+<createdTime>2016-03-29 17:18:50 UTC</createdTime>
+<ownerDesignName>aggregator</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="B634600C-B3B2-4E96-CAFC-E69957CFE988"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="C9CEB147-506D-F5BF-BC1B-24E3110BF69C" name="CR_ENSEMBLE_FK">
+<createdBy>daven</createdBy>
+<createdTime>2016-03-29 17:20:21 UTC</createdTime>
+<ownerDesignName>aggregator</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="E8EDCC49-9F70-9FE7-C5F5-DD3B1E8926DF"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="2D7ED514-7A87-0C4E-6715-E4A1FF98D175" name="CR_PARTS_FK">
+<createdBy>daven</createdBy>
+<createdTime>2016-03-29 17:21:56 UTC</createdTime>
+<ownerDesignName>aggregator</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="6A3B533A-89E5-63CB-6F63-ABCF78F66A26"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="1490449B-05AA-0721-F8A6-21D462221585" name="CR_ASSEMBLE_TYPE_FK">
+<createdBy>daven</createdBy>
+<createdTime>2016-03-29 17:37:08 UTC</createdTime>
+<ownerDesignName>aggregator</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="4E280765-98DD-1890-1C93-8D4F45348C52"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>
